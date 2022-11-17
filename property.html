@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="p-5 m-5">
+
+    <h1 class="mb-5">Detalles de la propiedad</h1>
+
+    <div class="card mb-3 dark w-100" style="max-width: 540px;">
+        <div class="row g-0 w-100">
+            <div class="col-md-8">
+                <img class="img-fluid rounded-start w-100 h-auto p-3" id="img" style="" />
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <p id="ubication"></p>
+                    <h5 class="card-title" id="id"></h5>
+                    <p class="card-text" id="addres"></p>
+                    <p id="price"></p>
+                    <p style="background-color: orange; width: 50px; height: 50px; border-radius: 50px;"></p>
+                    <div class="d-flex justify-content-around">
+                        <p id="area"></p>
+                        <p id="bedrooms"></p>
+                        <p id="bathrooms"></p>
+                        <p id="parking"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module">
+        import { getPropietyById } from "/javascript/api.js"
+        let time = window.location.search.split("=")[1];
+
+        getPropietyById(time).then((data) => {
+            document.getElementById("ubication").innerText = data.ubication;
+            document.getElementById("id").innerText = data.id;
+            document.getElementById("addres").innerText = data.addres;
+            document.getElementById("price").innerHTML = data.price;
+            document.getElementById("area").innerText = data.area;
+            document.getElementById("bedrooms").innerText = data.bedrooms;
+            document.getElementById("bathrooms").innerText = data.bathrooms;
+            document.getElementById("parking").innerText = data.parking;
+            document.getElementById("img").setAttribute("src", `imgs spring/2 featured properties/${data.image}`)
+            console.log(document.getElementById("img"));
+            // document.getElementById("img").style.backgroundImage = `url(imgs spring/2 featured properties/${data.image})`;
+        });
+    </script>
+
+</body>
+
+</html>

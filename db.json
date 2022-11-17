@@ -1,0 +1,95 @@
+{
+    "productos": [
+        {
+            "id": "quintas",
+            "image": "Quintas de Veracruz.png",
+            "ubication": "Medellin-ANT",
+            "addres": "cll 29 # 77 117",
+            "area": "85mt2",
+            "bedrooms": 2,
+            "bathrooms": 3,
+            "price": "$320.000",
+            "parking": 2,
+            "type": "house",
+            "owner": "Rodrigo Antonio",
+            "status": "for sale",
+            "date": "4 months ago"
+        },
+        {
+            "id": "casafinca",
+            "image": "casaFinca.png",
+            "ubication": "Rionegro-ANT",
+            "addres": "la vega 33 04",
+            "area": "85mt2",
+            "bedrooms": 2,
+            "bathrooms": 3,
+            "price": "$500.000",
+            "parking": 2,
+            "type": "house",
+            "owner": "Natalia Zapata",
+            "status": "for sale",
+            "date": "4 months ago"
+        },
+        {
+            "id": "Apartment1",
+            "image": "apartment1.png",
+            "ubication": "El Poblado",
+            "addres": "avenida siempre bella ",
+            "area": "65mt2",
+            "bedrooms": 2,
+            "bathrooms": 3,
+            "price": "$250.000",
+            "parking": 2,
+            "type": "apartment",
+            "owner": "Sergio Lara",
+            "status": "for sale",
+            "date": "4 months ago"
+        },
+        {
+            "id": "Plaza Florida",
+            "image": "plaza florida.png",
+            "ubication": "Cartagena-BOL",
+            "addres": "avenida Simon Bolivar",
+            "area": "$100mt2",
+            "bedrooms": 2,
+            "bathrooms": 3,
+            "price": "$800.000",
+            "parking": 2,
+            "type": "house",
+            "owner": "Sebastian Gutierrez",
+            "status": "for sale",
+            "date": "4 months ago"
+        },
+        {
+            "id": "Casa llanogrande",
+            "image": "casa llanogrande.png",
+            "ubication": "Rionegro-ANT",
+            "addres": "carrera 45 78 11",
+            "area": "$200mt2",
+            "bedrooms": 2,
+            "bathrooms": 3,
+            "price": "500.000",
+            "parking": 2,
+            "type": "house",
+            "owner": "Gumersindo Agudelo",
+            "status": "for sale",
+            "date": "4 months ago"
+        },
+        {
+            "id": "Castellon de la Palma",
+            "image": "castellon de la palma.png",
+            "ubication": "Medellin-ANT",
+            "addres": "cll 33 78",
+            "area": "70mt2",
+            "bedrooms": 2,
+            "bathrooms": 3,
+            "price": "$500.000",
+            "parking": 2,
+            "type": "apartment",
+            "owner": "Pacho Delgado",
+            "status": "for sale",
+            "date": "4 months ago"
+        }
+     
+    ]
+}

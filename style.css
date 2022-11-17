@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  border: none;
+}
+
+.main-subtitle {
+  color: gray;
+}
+
+.titulo-busqueda {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login {
+  background-color: #2a41e8;
+  color: white;
+}
+
+.login-register {
+  float: right;
+}
+
+.form-list li {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.start-hall {
+  background-image: url(./imagenFondo/hero-bg-image.png);
+  background-size: 100%;
+  padding: 25.25vh;
+}
+
+.start-hall h1 {
+  color: white;
+}
+.start-hall p {
+  color: white;
+}
+
+.container-form {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 12px;
+}
+
+.form {
+  display: inline;
+}
+
+.circulo {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.button-search {
+  background-color: #2a41e8;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.info-title {
+  color: #8c8c8c;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.featured-properties-title {
+  font-size: 56px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.cards {
+  width: 398px;
+  background-color: white;
+  box-shadow: 0px 0px 7px gray;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 278px;
+  background-size: cover;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-p-location {
+  font-weight: 400;
+}
+
+.type {
+  background-color: #2a42e8;
+  color: white;
+  padding: 8px 11px;
+  border-radius: 4px;
+}
+.status {
+  background-color: #ff5e14;
+  color: white;
+  padding: 8px 11px;
+  border-radius: 4px;
+}
+
+.square,
+.black-square {
+  width: 34px;
+  height: 30px;
+  border-radius: 4px;
+  display: block;
+}
+.square {
+  background-color: #2a42e8;
+  margin-left: auto;
+}
+.black-square {
+  background-color: black;
+}
+
+.top {
+  display: flex;
+  gap: 4px;
+}
+
+.bottom {
+  display: flex;
+  gap: 5px;
+}
+
+.price {
+  background-color: white;
+  color: blue;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-right: auto;
+}
+
+.properties-cards {
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.card-info {
+  padding: 10px 24px;
+}
+.location {
+  font-weight: 400;
+  color: #848484;
+  margin-bottom: 20px;
+}
+
+.complete-location {
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+
+.owner-photo {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.owner-name {
+  color: #2a41e8;
+}
+
+.date {
+  color: #848484;
+  margin-left: auto;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  gap: 10px;
+}
+.area {
+  margin-right: auto;
+}
+
+.hot-deal-tittle {
+  font-size: 56px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.hot-deal {
+  background-image: url(./imagen-hotdeal/isaac-benhesed-249429-unsplash-1.png);
+  background-size: 100%;
+}
+
+.form-list {
+  position: fixed;
+  display: flex;
+  position: fixed;
+  left: 193px;
+  top: 41px;
+  text-decoration: none;
+}
+
+.li a {
+  text-decoration: none;
+}
+
+.submit-listing {
+  right: 13px;
+  position: static;
+  background-color: #ff5e14;
+  color: white;
+  float: right;
+}
+.logo {
+  background-color: #b2a3a3;
+  margin-top: 11px;
+}
+
+#check {
+  display: none;
+}
+
+.container-select {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form-list {
+  position: absolute;
+}
+
+.info-title {
+  margin-top: 37px;
+}
+
+@media (max-width: 680px) {
+  .form-list {
+    position: fixed;
+    left: -100%;
+    display: block;
+  }
+
+  .contenedor-logo {
+    width: 100%;
+    background-color: #b1b1b1;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  #check {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+  }
+
+  #check:checked ~ ul {
+    position: relative;
+    left: 0;
+  }
+
+  .start-hall {
+    padding: 3.25vh;
+  }
+
+  .container-form {
+    margin-top: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  .button-search {
+    background-color: #2a41e8;
+    color: white;
+    padding: 7px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container-select {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .info-title {
+    margin-top: 6%;
+  }
+
+  .logo {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="./index.html">ir al inicio</a>
+    <h1 class="titulo-busqueda">Resultado de busqueda:</h1>
+    <section id="properties-menu" class="properties-cards"></section>
+    <script type="module">
+        import { buscar } from "./javascript/api.js"
+        import { createCards } from "./javascript/createCard.js"
+
+        let casa = window.location.search;
+
+        buscar(casa).then((data) => {
+
+            console.log(data);
+            const container = document.querySelector(".properties-cards");
+            data.forEach((e) => {
+                const card = createCards(e);
+                container.innerHTML = container.innerHTML + card;
+            });
+        });
+    </script>
+</body>
+
+</html>

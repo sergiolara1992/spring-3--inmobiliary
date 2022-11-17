@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="main-container">
+
+    <p class="main-subtitle">CasaRoyal</p>
+
+
+    <div class="login">
+      <span class="direction">cll 29 77 belen</span>
+      <span class="number">3215658683</span>
+      <span class="time-open">Mon-Sun: 8am-6pm</span>
+      <span class="login-register">LOGIN/REGISTER </span>
+    </div>
+
+
+
+    <header class="menu-container">
+      <div class="contenedor-logo">
+        <img class="logo" src="./logo/Logo.png">
+      </div>
+
+      <div class="form-container">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbttom">
+          <img class="star" src="" alt="">
+        </label>
+
+
+        <ul class="form-list">
+          <li><a href="./index.html">HOMEPAGE</a></li>
+          <li><a href="./buscar.html">PROPERTY</a></li>
+          <li><a href="#">AGENCIES</a></li>
+          <li><a href="#">PAGES</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">COMPARE</a></li>
+          <li class="submit-listing"><a href="#">SUBMIT LISTING</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <section class="start-hall">
+      <div>
+        <h1>Let Us Guide You Home</h1>
+        <p>Find the house of your dreams</p>
+        <div class="container-form">
+
+          <form action="buscar.html" class="form">
+            <div class="container-select">
+
+              <label for="type" class="label">Type</label>
+              <select name="type" class="">
+                <option value="select" disabled>Select type</option>
+                <option value="house">house</option>
+                <option value="apartment">apartment</option>
+              </select>
+            </div>
+
+            <div class="container-select">
+              <label for="status" class="label">Status</label>
+              <select name="status" class="selects">
+                <option value="select">Select status</option>
+                <option value="for sale">venta</option>
+                <option value="alquiler">renta</option>
+              </select>
+
+            </div>
+
+            <div class="container-select">
+              <input type="text" class="search" placeholder="Search for properties, suburbs or keywords...">
+
+            </div>
+            <button type="submit" class="button-search">FIND PROPERTIES</button>
+
+
+
+          </form>
+
+        </div>
+
+    </section>
+
+
+    <section class="featured-properties">
+      <p class="info-title">CASAROYAL REAL ESTATE AGENCY</p>
+      <h2 class="featured-properties-title">Featured Properties</h2>
+
+      <div id="properties-menu" class="properties-cards"></div>
+    </section>
+    <img src="imgs spring/2 featured properties/" alt="" />
+
+
+
+    <section class="hot-deal">
+      <p class="info-title">CASAROYAL REAL ESTATE AGENCY</p>
+      <h2 class="hot-deal-tittle">Hot Deal</h2>
+
+
+      <div>
+        <p>Residential Towe For Rent</p>
+        <h2>15 Apartments of Type B</h2>
+        <p>Los Angeles, CA</p>
+      </div>
+
+      <button type="submit" class="button-hotdeal">From $1,700.00 Per Month</button>
+
+    </section>
+
+
+
+
+
+
+
+
+  </main>
+  <script type="module" src="./javascript/main.js"></script>
+</body>
+
+</html>
